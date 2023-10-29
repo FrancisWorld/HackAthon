@@ -1,54 +1,53 @@
-# Astro Starter Kit: Basics
+# HackAthon - LeaderBoard
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este é um projeto simples de Leaderboard criado com o framework [Astro](https://docs.astro.build), que permite exibir uma lista de usuários obtidos de uma API.
+O projeto é uma aplicação web que exibe uma lista classificatória de usuários com base em dados obtidos de uma API. Utiliza o framework [Astro](https://docs.astro.build) para a construção do frontend, juntamente com a biblioteca [Framer Motion](https://www.framer.com/motion/) para criar animações suaves e [TailWindCSS](https://tailwindcss.com/) para estilização.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![LeaderBoardPreview](/public/imgs/LeaderBoardPreview.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## 🚀 Project Structure
+## 🚀 Estrutura do projeto
 
-Inside of your Astro project, you'll see the following folders and files:
+No projeto, a estrutura principal consiste:
 
 ```text
 /
 ├── public/
+|   |-- imgs/
+|   |   └── LeaderBoardPreview.png
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── LeaderBoard.jsx
 │   ├── layouts/
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   |-─ pages/
+│   |    └── index.astro
+│   |-─ styles/
+|   |    └── global.css
 └── package.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Dentro de `src/components/`, é possivel adicionar componentes do tipo Astro/React/Vue/Svelte/Preact
 
-Any static assets, like images, can be placed in the `public/` directory.
+Qualquer informação estática, pode ser colocada no diretório `public/`
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+Todos os comandos são rodados no **root** via terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala dependências                            |
+| `npm run dev`             | Inicia um servidor local em `localhost:4321`      |
+| `npm run build`           | Da um build na aplicação `./dist/`          |
+| `npm run preview`         | Da um preview na sua build, antes do deploy     |
+| `npm run astro ...`       | Roda comandos CLI, como `astro add`, `astro check` |
+| `npm run astro -- --help` | Ajuda via Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Precisa de ajuda?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Da uma olhada na documentação do [Astro](https://docs.astro.build) ou no [servidor do Discord](https://astro.build/chat).
