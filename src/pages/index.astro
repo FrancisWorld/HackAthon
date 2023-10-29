@@ -1,6 +1,5 @@
 ---
 import '@/styles/globals.css'
-import Config from "../components/Config";
 import LeaderBoard from "../components/LeaderBoard.jsx";
 import Layout from "../layouts/Layout.astro";
 
@@ -31,6 +30,5 @@ leaderboardData.push(...data);
 <Layout>
   <div class="flex flex-col items-center justify-center min-h-screen">
     <LeaderBoard client:load data={leaderboardData} />
-    <Config client:load/>
   </div>
 </Layout>
